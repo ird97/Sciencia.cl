@@ -3,17 +3,31 @@ import Layout from '../layouts/Layout.astro';
 import Markdown from '../components/Markdown.astro';
 
 const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
+En **Sciencia**, ponemos el conocimiento académico experto en acción.
 
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
+Integramos el rigor científico con un servicio ejecutado por profesionales de primer nivel, ofreciendo soluciones técnicas en áreas estratégicas contribuyendo al desarrollo y bienestar nacional:
+
+* **Medicina Veterinaria y Diagnóstico:** Servicios clínicos especializados y análisis de laboratorio con estándares de alta precisión.
+* **Extensión y Eventos Académicos:** Gestión integral, organización, curaduría de contenidos y producción de charlas y congresos científicos.
+* **Consultoría e Investigación (I+D):** Asesoría técnica basada en evidencia y desarrollo de proyectos de investigación aplicada, respaldados por un equipo de primer nivel, liderado por destacados académicos del área tanto en Chile como el resto del Mundo.
 `;
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
+<Layout title="Sciencia | Servicios Científicos">
+    <h1 class="mb-4 text-6xl font-bold">Sciencia</h1>
+    
+    <h2 class="mb-10 text-2xl text-gray-400 font-light">
+        <span class="text-primary font-bold">S</span>ervicios de <span class="text-primary font-bold">Ciencia</span>
+    </h2>
+
     <Markdown content={explainer} class="mb-10 text-lg" />
+    
     <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
+        <a href="mailto:contacto@sciencia.cl" class="btn btn-lg sm:min-w-64">Contactar al equipo</a>
+    </p>
+</Layout>
+    
+    <p>
+        <a href="mailto:contacto@sciencia.cl" class="btn btn-lg sm:min-w-64">Cotizar Servicios</a>
     </p>
 </Layout>
